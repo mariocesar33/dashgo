@@ -1,0 +1,5 @@
+typescript
+-> yarn add typescript @types/react @types/node -D
+
+chakra-ui
+-> yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
