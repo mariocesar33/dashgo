@@ -6,3 +6,6 @@ chakra-ui
 
 icons
 -> yarn add react-icons
+
+biblioteca de graficos
+-> yarn add apexcharts react-apexcharts
