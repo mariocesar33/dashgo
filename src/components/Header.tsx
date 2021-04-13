@@ -29,7 +29,7 @@ export function Header() {
         paddingY="4"
         paddingX="8"
         marginLeft="6"
-        maxWidth={400}
+        maxWidth={550}
         alignSelf="center"
         color="gray.200"
         position="relative"
