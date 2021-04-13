@@ -23,7 +23,11 @@ export function Header() {
 
       <Flex alignItems="center" marginLeft="auto">
         <NotificationNav />
-        <Profile />
+        <Profile 
+          name="Mário César" 
+          email="mcsilva@gmail.com" 
+          avatarURL="https://avatars.githubusercontent.com/u/24758286?v=4" 
+        />
       </Flex>
     </Flex>
   );
