@@ -32,7 +32,7 @@ export default function UserList() {
             <Thead>
               <Tr>
                 <Th paddingX="6" color="gray.300" width="8">
-                  {/* <Checkbox colorScheme="pink" /> */}
+                  <Checkbox colorScheme="pink" />
                 </Th>
                 <Th>Usuário</Th>
                 <Th>Data de cadastro</Th>
