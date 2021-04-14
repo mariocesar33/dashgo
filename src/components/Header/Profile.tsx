@@ -17,7 +17,7 @@ export function Profile({ name, email, avatarURL, showProfileData = true }: Prof
         </Box>
       )}
 
-      <Avatar size="md" name="Mário César" src={avatarURL} />
+      <Avatar size="md" name={name} src={avatarURL} />
     </Flex>
   );
 }
