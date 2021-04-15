@@ -9,3 +9,6 @@ icons
 
 biblioteca de graficos
 -> yarn add apexcharts react-apexcharts
+
+React hook form
+-> yarn add react-hook-form
