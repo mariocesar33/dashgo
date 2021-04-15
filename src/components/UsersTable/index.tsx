@@ -1,9 +1,12 @@
-import { Box, Button, Checkbox, Icon, Table, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
-import { RiPencilLine } from 'react-icons/ri';
+import { Checkbox, Table, Tbody, Th, Thead, Tr, useBreakpointValue } from '@chakra-ui/react';
 import { TableRow } from './TableRow';
 
 
 export function UsersTable() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true
+  });
   return (
     <Table colorScheme="whiteAlpha" >
       <Thead>
@@ -12,7 +15,9 @@ export function UsersTable() {
             <Checkbox colorScheme="pink" />
           </Th>
           <Th>Usuário</Th>
-          <Th>Data de cadastro</Th>
+          { isWideVersion && (
+            <Th>Data de cadastro</Th>)
+          }
           <Th width="8"></Th>
         </Tr>
       </Thead>
