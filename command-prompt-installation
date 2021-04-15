@@ -12,3 +12,6 @@ biblioteca de graficos
 
 React hook form
 -> yarn add react-hook-form
+
+yup (biblioteca javascript de validação)
+-> yarn add yup @hookform/resolvers
