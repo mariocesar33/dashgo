@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Button, Icon } from '@chakra-ui/react';
+import Link from 'next/link';
 import { RiAddLine } from 'react-icons/ri';
 
 import { Header } from '../../components/Header';
@@ -18,15 +19,17 @@ export default function UserList() {
           <Flex marginBottom="8" justifyContent="space-between" alignItems="center">
             <Heading size="lg" fontWeight="normal">Usuário</Heading>     
             
-            <Button 
-              as="a"
-              size="sm"
-              fontSize="sm"
-              colorScheme="pink"
-              leftIcon={<Icon as={RiAddLine} fontSize="20"/>}
-            >
-              Criar novo usuário
-            </Button>
+            <Link href="/users/create" passHref>
+              <Button 
+                as="a"
+                size="sm"
+                fontSize="sm"
+                colorScheme="pink"
+                leftIcon={<Icon as={RiAddLine} fontSize="20"/>}
+              >
+                Criar novo usuário
+              </Button>
+            </Link>
           </Flex>
 
           <UsersTable />
