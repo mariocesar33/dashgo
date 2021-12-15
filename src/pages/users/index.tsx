@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Button, Icon } from '@chakra-ui/react';
+import { Box, Flex, Heading, Button, Icon, useBreakpointValue } from '@chakra-ui/react';
 import Link from 'next/link';
 import { RiAddLine } from 'react-icons/ri';
 
@@ -8,6 +8,11 @@ import { Sidebar } from '../../components/Sidebar';
 import { UsersTable } from '../../components/UsersTable';
 
 export default function UserList() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Box>
       <Header />
